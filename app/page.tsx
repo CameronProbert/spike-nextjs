@@ -7,7 +7,6 @@ import Image from 'next/image'
 export default function Page() {
   return (
       <main className="flex min-h-screen flex-col p-6">
-        <div className={styles.shape}/>
         <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
            <AcmeLogo />
         </div>
@@ -43,7 +42,7 @@ export default function Page() {
                   src="/hero-mobile.png"
                   width={560}
                   height={620}
-                  className="hidden sm:block"
+                  className="block md:hidden"
                   alt="Screenshots of the dashboard project showing desktop version"
               />
           </div>
